@@ -1,2 +1,2 @@
 # ShuzoBot
-tell the maxim of Shozo.M
+tell the maxim quoted from Shozo Matsuoka
