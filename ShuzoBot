@@ -7,7 +7,7 @@ open('maxim') do |f|
     f.gets("### maxim data ###")
     data = f.read()
     fortunes = data.split("%")
-    puts fortunes[rand(fortunes.length + 1)]
+    puts fortunes[rand(fortunes.length)]
 #    puts fortunes[fortunes.length]
 end
 
