@@ -1,0 +1,21 @@
+#! /bin/sh
+# coding: utf-8
+exec ruby -S -x "$0" "$@"
+#! ruby
+
+open('maxim') do |f|
+    f.gets("### maxim data ###")
+    data = f.read()
+    fortunes = data.split("%")
+    puts fortunes[rand(fortunes.length + 1)]
+#    puts fortunes[fortunes.length]
+end
+
+puts "                                -- Shuzo Matsuoka\n\n"
+puts "~~~~~~~~~~~\\/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+open('aa') do |f|
+    aa = f.read()
+    puts aa
+end
+
