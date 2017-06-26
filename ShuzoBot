@@ -8,7 +8,6 @@ open('maxim') do |f|
     data = f.read()
     fortunes = data.split("%")
     puts fortunes[rand(fortunes.length)]
-#    puts fortunes[fortunes.length]
 end
 
 puts "                                -- Shuzo Matsuoka\n"
