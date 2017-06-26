@@ -2,8 +2,9 @@
 # coding: utf-8
 exec ruby -S -x "$0" "$@"
 #! ruby
-  
-open('maxim') do |f|
+
+prefix = Dir::home
+open(prefix+"/shuzo/maxim") do |f|
     f.gets("### maxim data ###")
     data = f.read()
     fortunes = data.split("%")
@@ -13,5 +14,5 @@ end
 puts "                                -- Shuzo Matsuoka\n"
 puts "~~~~~~~~~~~\\/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-exec("./imgcat shuzo.png")
+exec("imgcat "+prefix+"/shuzo/shuzo.png")
 
