@@ -2,7 +2,7 @@
 # coding: utf-8
 exec ruby -S -x "$0" "$@"
 #! ruby
-
+  
 open('maxim') do |f|
     f.gets("### maxim data ###")
     data = f.read()
@@ -11,11 +11,8 @@ open('maxim') do |f|
 #    puts fortunes[fortunes.length]
 end
 
-puts "                                -- Shuzo Matsuoka\n\n"
+puts "                                -- Shuzo Matsuoka\n"
 puts "~~~~~~~~~~~\\/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-open('aa') do |f|
-    aa = f.read()
-    puts aa
-end
+exec("./imgcat shuzo.png")
 
