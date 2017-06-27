@@ -24,15 +24,20 @@ main(){
         echo "--- using zsh ---"
         echo "--- write path: $prefix/shuzo $HOME/.zprofile ---"
         
-        echo "export PATH=\"$prefix/shuzo:\$PATH\"" >> $HOME/.zprofile
+        echo "export PATH=\"$prefix/shuzo:\$PATH\"\nShuzoBot" | sudo tee -a $HOME/.zprofile
+
+        source $HOME/.zprofile
 
         return 0
         
     elif [[ $SHELL =~ bash ]]; then
         echo "--- using bash ---"
         echo "--- write path: $prefix/shuzo $HOME/.bash_profile ---"
-        echo "export PATH=\"$prefix/shuzo:$PATH\"" >> $HOME/.bash_profile
 
+        echo "export PATH=\"$prefix/shuzo:\$PATH\"\nShuzoBot" | sudo tee -a $HOME/.bash_profile
+
+        source $HOME/.bash_profile
+        
         return 0
         
     else
@@ -52,5 +57,3 @@ imgcat_install
 main
 
 ./ShuzoBot
-
-echo "finally, source your profile!"
