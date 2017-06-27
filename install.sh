@@ -30,10 +30,8 @@ main(){
         
     elif [[ $SHELL =~ bash ]]; then
         echo "--- using bash ---"
-        echo "--- write path: $prefix/shuzo $HOME/.bash_profile --\
-     -"
-        echo "export PATH=\"$prefix/shuzo:$PATH\""
-        >> $HOME/.bash_profile
+        echo "--- write path: $prefix/shuzo $HOME/.bash_profile ---"
+        echo "export PATH=\"$prefix/shuzo:$PATH\"" >> $HOME/.bash_profile
 
         return 0
         
