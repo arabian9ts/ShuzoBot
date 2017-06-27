@@ -55,5 +55,3 @@ set -eu
 trap end ERR
 imgcat_install
 main
-
-./ShuzoBot
