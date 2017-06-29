@@ -6,6 +6,9 @@ tell the maxim quoted from Shozo Matsuoka
 ShuzoBot says the random maxim quoted from Shuzo Matsuoka.  
 This requires iTerm2 command line environment and ruby processor.
 
+## Demo
+![shuzo demo](demo/shuzobot.gif)
+
 ## Install
     cd ~
     git clone https://github.com/arabian9ts/ShuzoBot
@@ -14,7 +17,7 @@ This requires iTerm2 command line environment and ruby processor.
     cd ../
     rm -rf ShuzoBot
 
-## Notion
+## Notice
 ShuzoBot shows Shuzo's image that has white color ASCII-ART.  
 If your environment has white background, use ShuzoBot/img_processor/processor.py and change string color white -> the other.  
 
